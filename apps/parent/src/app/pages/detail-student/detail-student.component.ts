@@ -102,7 +102,7 @@ export class DetailStudentComponent implements OnInit {
         this.children.push(el._id.toString());
       });
       this.children2 = this.children;
-
+      console.log('this.children', this.children);
       if (!this.children.includes(this.idStudent)) {
         this.router.navigate(['/not-found']);
       } else {
