@@ -7,9 +7,9 @@ function requireHTTPS(req, res, next) {
 }
 const express = require('express');
 const app = express();
-app.use(express.static('./dist/apps/teacher'));
+app.use(express.static('./dist/apps/student'));
 app.use(requireHTTPS);
 app.get('/*', function (req, res) {
-  res.sendFile('index.html', { root: 'dist/apps/teacher/' });
+  res.sendFile('index.html', { root: 'dist/apps/student/' });
 });
 app.listen(process.env.PORT || 8080);
