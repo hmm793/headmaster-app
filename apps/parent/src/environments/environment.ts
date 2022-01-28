@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  port: 'https://backend-final-project-salt.herokuapp.com',
+  port: 'https://back-end-final-project-app.herokuapp.com',
 };
 
 /*
